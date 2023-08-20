@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+    
+    <body id="particles-js">
+        <header>
+            <nav>
+                <div  class="left"  ><img src = "./assets/arlogo.png" alt="Logo" class ="logoar"></div>
+                <div  class = "right" >
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main style="background-color: rgba(255, 7, 7, 0);">
+            <section class = "firstSection" >
+                <div class = "leftSection" >
+                    Hey👋, I'm <span class = "purple">Anand</span>
+                    <div>a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons" >
+                        <button class="btn">Download Resume</button>
+                        <button class="btn">Github</button>
+                    </div>
+                
+                </div>
+                <div class = "rightSection">
+                    <img src="./assets/homeimg.png" alt="img">
+    
+                </div>
+    
+            </section>
+        </main>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', { 
+              strings: ['<i>Software Engineer</i>', '<i>Graphic Designer</i>','<i>Web Developer</i>','<i>Freelancer</i>','<i> python lover❤️</i>'],
+              typeSpeed: 50,
+            });
+            </script>
+        
+            <section id="about">
+                <p class="section__text__p1" style = "position:relative; top:90px;">Get To Know More</p>
+                <h1 class="title" style="position:relative;top:80px;">About Me</h1>
+                <div class="section-container">
+                    <div class="helloworld" style="position: relative;top:75px;">
+                        <p class="fstyle">
+                            <span id="typed"></span>
+                        </p>
+                       
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container" style = "position:relative; left:140px; top:-17px;" >
+                                 <img src="./assets/experience.png" alt="a" class="icon">
+                                 <h3 class="textcolor">Experience</h3>
+                                 <p>2 Years in the Industry<br>Freelance Work<br>Graphic Design<br>Software Development<br>Web Development</p>
+                            </div>
+                            <div class="details-container" style = "position:relative; left:146px;top:-17px;">
+                                <img src="./assets/edu.png" alt="a" class="icon">
+                                 <h3 class="textcolor">Education</h3>
+                                 <p>B-Tech CSE<br>Specialization in AI&ML<br>Masters Cyber Security</p>
+                            </div>
+    
+                            <div class="quote" style = "position:relative; left:150px;top:-17px;">
+                                 <br><span class="textcolor">"</span>Im not a great programmer<br>I'm just a good programmer <br>with great habits<span class="textcolor">"</span>
+                            </div>
+                            <p style="position: relative;top:250px;right:500px;" class="about-containers"> </p>
+                        </div>
+                    </div>
+            </section>
+            <section style="position: relative;bottom:152px;left:630px; width:900px;"><b class="textcolor">Greetings!</b> I'm a versatile professional who thrives at the intersection of freelancing, software <br>development, and web design. With a passion for transforming ideas into impactful digital experiences,<br> I've honed my skills in crafting elegant code and intuitive user interfaces. As a software developer,<br> I relish diving into complex algorithms and debugging puzzles, ensuring that <br>every line of code I write contributes to a seamless user journey.</section>
+        
+    
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+            <script>
+                var typed = new Typed('#typed', { 
+              strings: ['<br><br>‎ ‎ 1‎‎ print("Hello World!")<br>‎ ‎ 2 print("I\'m","aboutme.<span class="textcolor">Name</span>")<br>‎ ‎ 3 print("aboutme.<span class="textcolor">Age</span>")<br>‎ ‎ 4 print("aboutme.<span class="textcolor">Traits</span>")<br>‎ ‎ 5 print("aboutme.<span class="textcolor">Contact</span>")<br>‎ ‎ <br>‎ ‎>>> <span class="textcolor">Hello World!</span> <br>‎ ‎>>> <span class="textcolor">I\'m Anand Raja Mohan</span><br>‎ ‎>>> <span class="textcolor">22 </span><br>‎ ‎>>> <span class="textcolor">Dev</span> <br>‎ ‎>>> <span class="textcolor">Freelancer </span><br>‎ ‎>>> <span class="textcolor">A guy in love with Python!</span><br>‎ ‎>>><span class="textcolor"> Hit Me @ anandrm@outlook.com'],
+              typeSpeed: 50,
+              startDelay: 100,
+              
+            });
+        
+            </script>
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+    
+</body>
+
+</html>
