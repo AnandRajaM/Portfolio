@@ -10,11 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
+    <script defer src="app1.js"></script>
 </head>
 
 
     <body>
         <div id="particles-js"></div>
+        
             <nav >
                 <div  class="left"  ><img src = "./assets/arlogo.png" alt="Logo" class ="logoar"></div>
                 <div  class = "right" >
@@ -31,7 +34,7 @@
 
         <main>
             <section class = "firstSection" >
-                <div class = "leftSection">
+                <div class = "leftSection hidden ani1">
                     Hey👋, I'm <span class = "purple">Anand</span>
                     <div>a passionate</div>
                     <span id="element"></span>
@@ -41,7 +44,7 @@
                     </div>
                 
                 </div>
-                <div class = "rightSection">
+                <div class = "rightSection hidden ani1">
                     <img src="./assets/homeimg.png" alt="img">
     
                 </div>
@@ -53,14 +56,15 @@
             var typed = new Typed('#element', { 
               strings: ['<i>Software Engineer</i>', '<i>Graphic Designer</i>','<i>Web Developer</i>','<i>Freelancer</i>','<i> python lover❤️</i>'],
               typeSpeed: 50,
+              startDelay: 1000,
             });
             </script>
         
-        <section id="about" >
-            <p class="section__text__p1" style = "position:relative; top:90px;">Get To Know More</p>
-            <h1 class="title" style="position:relative;top:80px;">About Me</h1>
+        <section  id="about"  style="position: relative;top: 50px;">
+            <p class="section__text__p1 hidden" style = "position:relative; top:90px;">Get To Know More</p>
+            <h1 class="title hidden" style="position:relative;top:80px;">About Me</h1>
             <div class="section-container">
-                <div class="helloworld" style="position: relative;top:77px; left:110px;" >
+                <div class="helloworld hidden animation" style="position: relative;top:77px; left:110px;" >
                     <p class="fstyle">
                         <span id="typed"></span>
                     </p>
@@ -68,51 +72,60 @@
                 </div>
                 
             
-                <div class="about-details-container">
+                <div class="about-details-container ">
                     <div class="about-containers">
-                        <div class="details-container" style = "position:relative; left:110px; top:-17px;" >
+                        <div class="details-container hidden animation" style = "position:relative; left:110px; top:-17px;" >
                              <img src="./assets/experience.png" alt="a" class="icon">
                              <h3 class="textcolor">Experience</h3>
                              <p>2 Years in the Industry<br>Freelance Work<br>Graphic Design<br>Software Development<br>Web Development</p>
                         </div>
-                        <div class="details-container" style = "position:relative; left:110px;top:-17px;">
+                        <div class="details-container hidden animation" style = "position:relative; left:110px;top:-17px;">
                             <img src="./assets/edu.png" alt="a" class="icon">
                              <h3 class="textcolor">Education</h3>
                              <p>B-Tech CSE<br>Specialization in AI&ML<br>Masters Cyber Security</p>
                         </div>
 
-                        <div class="quote" style = "position:relative; left:110px;top:-17px;">
+                        <div class="quote hidden animation" style = "position:relative; left:110px;top:-17px;">
                              <br><span class="textcolor">"</span>Im not a great programmer<br>I'm just a good programmer <br>with great habits<span class="textcolor">"</span>
                         </div>
                         <p style="position: relative;top:250px;right:500px;" class="about-containers"> </p>
                     </div>
                 </div>
         </section>
-            <section style="position: relative;bottom:152px;left:600px; width:900px;"><b class="textcolor">Greetings!</b> I'm a versatile professional who thrives at the intersection of freelancing, software <br>development, and web design. With a passion for transforming ideas into impactful digital experiences,<br> I've honed my skills in crafting elegant code and intuitive user interfaces. As a software developer,<br> I relish diving into complex algorithms and debugging puzzles, ensuring that <br>every line of code I write contributes to a seamless user journey.</section>
+            <section class="hidden" style="position: relative;bottom:100px;left:600px; width:900px;"><b class="textcolor">Greetings!</b> I'm a versatile professional who thrives at the intersection of freelancing, software <br>development, and web design. With a passion for transforming ideas into impactful digital experiences,<br> I've honed my skills in crafting elegant code and intuitive user interfaces. As a software developer,<br> I relish diving into complex algorithms and debugging puzzles, ensuring that <br>every line of code I write contributes to a seamless user journey.</section>
         </div>
     
-        <section class="work" id="clients">
+
+
+
+        <section class="work hidden" id="clients">
             <p class="section__text__p1" style="position: relative;top: 200px; font-size: 1.2rem; color: rgb(255, 255, 255);">Some Of My</p> 
             <h1 class="title" style="position: relative;top: 190px; color: rgb(69, 197, 69);">Notable Clients</h1>
             
                 <img src="./assets/fiverr.png" style="position: relative;top:300px; right: 350px;"
                 width="300px" 
                 height=""
-                alt="logo">
+                alt="logo"
+                class="hidden logos">
                 <img src="./assets/runescape.png"  style="position: relative; top: 307px; right: 150px;"
                 
                 width="300px"
                 height="100px"
-                alt="logo">
+                alt="logo"
+                class="hidden logos">
             </div>
         </section >
-        <section id="projects">
+        <section id="projects" class="hidden">
         <p class="section__text__p1" style="position: relative;top: 200px; font-size: 1.2rem; color: rgb(255, 255, 255);">My Awesome</p> 
         <h1 class="title" style="position: relative;top: 190px; color: rgb(0, 255, 0);">Projects</h1>
-        <div style="position: relative;top:500px;"></div>
-         
+        <div class="maindiv">
+            <div class="projects animation1">
+                <img src="./assets/github.png" alt="icon" class="icon">
+            </div>
+            <div class="projects animation1"></div>
+            <div class="projects animation1"></div>
+        </div>
         
-
         </section>
 
     
@@ -123,7 +136,7 @@
                 var typed = new Typed('#typed', { 
               strings: ['<br><br>‎ ‎ 1‎‎ print("Hello World!")<br>‎ ‎ 2 print("I\'m","aboutme.<span class="textcolor">Name</span>")<br>‎ ‎ 3 print("aboutme.<span class="textcolor">Age</span>")<br>‎ ‎ 4 print("aboutme.<span class="textcolor">Traits</span>")<br>‎ ‎ 5 print("aboutme.<span class="textcolor">Contact</span>")<br>‎ ‎ <br>‎ ‎>>> <span class="textcolor">Hello World!</span> <br>‎ ‎>>> <span class="textcolor">I\'m Anand Raja Mohan</span><br>‎ ‎>>> <span class="textcolor">22 </span><br>‎ ‎>>> <span class="textcolor">Dev</span> <br>‎ ‎>>> <span class="textcolor">Freelancer </span><br>‎ ‎>>> <span class="textcolor">A guy in love with Python!</span><br>‎ ‎>>><span class="textcolor"> Hit Me @ anandrm@outlook.com'],
               typeSpeed: 50,
-              startDelay: 500,
+              startDelay: 800,
               
             });
         
